@@ -19,7 +19,7 @@ p {
   font-family: "Roboto Mono", monospace;
 }
 
-h3 {
+.get-groovy {
   display: flex;
   justify-content: center;
 }

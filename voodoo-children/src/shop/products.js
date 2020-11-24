@@ -32,8 +32,8 @@ const Products = (props) => {
                     <h3 id="promo">Get 10% Off</h3>
                 </div>
                 <LoadProducts first="6" last="8"/>
+                <Footer />
             </div>
-            <Footer />
         </div>
     );
 };

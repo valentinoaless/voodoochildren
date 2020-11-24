@@ -9,7 +9,7 @@ const Lookbook = () => {
     <div>
       <NavBar />
       <div className="lookbook">
-        <h3>Get Groovy</h3>
+        <h3 className="get-groovy">Get Groovy</h3>
         <div className="about">
           <img src="./componentsLB/Hendrix-photo.png" alt="Hendrix Picture" />
           <div className="ctainfo">
