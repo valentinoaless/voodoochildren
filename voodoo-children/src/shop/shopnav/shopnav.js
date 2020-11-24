@@ -1,7 +1,7 @@
 import React from 'react';
 import './shopnav.css';
 import { Link, Switch, Route } from 'react-router-dom'
-import Products from '../products/products.js'
+
 
 const ShopNav = () => {
     return (

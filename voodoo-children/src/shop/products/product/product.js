@@ -1,14 +1,20 @@
 import React from 'react';
 import './product.css';
+import { Link } from 'react-router-dom'
 
 const Product = (props) => {
     return (
         <div className="product">
             <div className="product-image">
-
+                <Link>
+                    <img src={props.image} alt={props.name} width="187px" height="200px"></img>
+                </Link>
             </div>
-            <h1 className="product-name">{props.name}</h1>
-            <h3 className="product-price">{props.price}<span> USD</span></h3>
+            <div>
+                <h3 className="product-name">{props.name}</h3>
+                <p className="product-type">{props.type}</p>
+                <h1 className="product-price">${props.price}</h1>
+            </div>
         </div>
     );
 };

@@ -5,12 +5,14 @@ import './nav.css'
 const NavBar = () => {
     return (
         <div className="nav">
-            <div className='nav-home'>
-                <Link to='/' className='nav-link'>Home</Link>
-            </div>
             <div className='nav-links'>
-                <Link to="/about" className='nav-link'>About</Link>
-                <Link to="/shop" className='nav-link'>Shop</Link> 
+                <Link to="/products" className='nav-link'>shop</Link> 
+                <Link to="/about" className='nav-link'>get groovy</Link>
+            </div>
+            <div className='nav-home'>
+                <Link to='/' className='nav-link'>
+                    <img id="logo" src='./images/logo/logo.svg' alt="Jimi Hendrix - Home"/>
+                </Link>
             </div>
         </div>
     );

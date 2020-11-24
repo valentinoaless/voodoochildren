@@ -1,35 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
 .nav {
-    height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: rgb(96, 15, 113);
-    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    margin: auto;
 }
 
 .nav-home, .nav-links {
-    width: 50vw;
-
-}
-
-.nav-home {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    width: 30vw;
+    margin: auto;
 }
 
 .nav-link {
     text-decoration: none;
-    color: white; 
-    margin: 40px;
+    color: black;
+    margin: 10px;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
 }
 
 .nav-link:hover {
-    color: #ddd;
+    color: gray;
+}
+
+#logo {
+    height: 50px;
+}
+
+.nav-home {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center
+}
+
+img {
+    max-width: 90vw;
 }

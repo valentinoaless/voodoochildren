@@ -1,11 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 .product {
-    border: 1px solid black;
+    margin-top: 40px;
     padding: 10px;
-    width: 20vw;
-    height: 300px;
+    width: 200px;
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    
+}
+
+.product-type {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    margin-bottom: 5px;
 }
 
 .product-image {
-    height: 50%;
-    border: 1px solid black;
+    transition: all 100ms;
+}
+
+.product-image:hover {
+    transform: scale(1.1)
+}
+
+.product-price {
+    margin-top: 5px;
+}
+
+@media (max-width: 425px) {
+    .product {
+        font-size: 0.8rem;
+    }
 }

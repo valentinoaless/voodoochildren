@@ -1,87 +1,65 @@
 [
     {
-        "hats": [
-            {
-                "name": "hat 1",
-                "image": "",
-                "price": 12.99,
-                "quantity": 1
-            },
-            {
-                "name": "hat 2",
-                "image": "",
-                "price": 14.99,
-                "quantity": 1
-            },
-            {
-                "name": "hat 3",
-                "image": "",
-                "price": 9.99,
-                "quantity": 1
-            },
-            {
-                "name": "hat 4",
-                "image": "",
-                "price": 10.99,
-                "quantity": 1
-            },
-            {
-                "name": "hat 5",
-                "image": "",
-                "price": 10.99,
-                "quantity": 1
-            }
-
-        ],
-
-        "vinyl": [
-            {
-                "name": "vinyl 1",
-                "image": "",
-                "price": 22.99,
-                "quantity": 1
-            },
-            {
-                "name": "vinyl 2",
-                "image": "",
-                "price": 24.99,
-                "quantity": 1
-            },
-            {
-                "name": "vinyl 3",
-                "image": "",
-                "price": 29.99,
-                "quantity": 1
-            }
-        ],
-
-        "shirts": [
-            {
-                "name": "shirt 1",
-                "image": "",
-                "price": 22.99,
-                "quantity": 1
-            },
-            {
-                "name": "shirt 2",
-                "image": "",
-                "price": 24.99,
-                "quantity": 1
-            },
-            {
-                "name": "shirt 3",
-                "image": "",
-                "price": 29.99,
-                "quantity": 1
-            },
-            {
-                "name": "shirt 4",
-                "image": "",
-                "price": 30.99,
-                "quantity": 1
-            }
-        ]
+        "name": "Maui Tie Dye",
+        "type": "Tee",
+        "image": "/images/products/product1.png",
+        "price": 38,
+        "quantity": 1
+    },
+    {
+        "name": "Live in Maui",
+        "type": "Logo Hoodie",
+        "image": "/images/products/product2.png",
+        "price": 45,
+        "quantity": 1
+    },
+    {
+        "name": "Live in Maui 1970",
+        "type": "Crest Tee",
+        "image": "/images/products/product3.png",
+        "price": 25,
+        "quantity": 1
+    },
+    {
+        "name": "Bold As Love Army",
+        "type": "Jacket",
+        "image": "/images/products/product4.png",
+        "price": 180,
+        "quantity": 1
+    },
+    {
+        "name": "Black Maui Live",
+        "type": "Tee",
+        "image": "/images/products/product5.png",
+        "price": 30,
+        "quantity": 1
+    },
+    {
+        "name": "Signature",
+        "type": "Beanie",
+        "image": "/images/products/product6.png",
+        "price": 25,
+        "quantity": 1
+    },
+    {
+        "name": "Face Dad Hat",
+        "type": "Cap",
+        "image": "/images/products/product7.png",
+        "price": 15,
+        "quantity": 1
+    },
+    {
+        "name": "Jacquard Knit Holiday",
+        "type": "Sweater",
+        "image": "/images/products/product8.png",
+        "price": 85,
+        "quantity": 1
+    },
+    {
+        "name": "Maui Gig Poster",
+        "type": "Tee",
+        "image": "/images/products/product9.png",
+        "price": 30,
+        "quantity": 1
     }
-
-    
 ]
