@@ -1,0 +1,79 @@
+@import url("https://use.typekit.net/bzm7kzn.css");
+
+.lookbook {
+  width: 75vw;
+  margin: auto;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 65vh;
+  width: 50vw;
+  margin: 40px auto;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+}
+
+.get-groovy {
+  display: flex;
+  justify-content: center;
+}
+
+.ctainfo {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid black;
+  margin: 0;
+  /* width: 50%; */
+}
+
+.experience-27 {
+  font-family: flower-power, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #ff53e1;
+  font-size: 30px;
+  justify-self: flex-start;
+}
+
+button {
+  border: 2.5px solid black;
+  color: blue;
+  background-color: white;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 5px;
+  width: 30%;
+  height: 10%;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  button {
+    width: 50%;
+  }
+}
+
+.lookbookImgs1strow img {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  margin: 0px;
+  padding: 0px;
+}
+.imgrowsizeing {
+  width: 25%;
+  height: 684px;
+}
+
+.lookbookImg2ndrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
