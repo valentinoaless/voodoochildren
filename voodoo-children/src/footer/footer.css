@@ -1,7 +1,21 @@
-.footer {
-    height: 30vh;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* .footer {
+  background-image: url("../../public/componentsLB/wavyblue.png");
+} */
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.policyLinks {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.formEmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
