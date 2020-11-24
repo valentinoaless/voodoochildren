@@ -3,8 +3,8 @@ import './reviews.css'
 
 const Reviews = () => {
     return (
-        <div className="reviews" style={{height: `${window.innerHeight}px`}}>
-            <h1>Reviews</h1>
+        <div className="reviews">
+            <h4 className="reviews-text">"Music doesn't lie. If there is something to be changed in this world, then it can only happen through music." - Jimi Hendrix</h4>
         </div>
     );
 };

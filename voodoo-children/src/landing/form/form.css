@@ -1,6 +1,87 @@
 .form {
-    border: 1px solid black;
+    /* border: 1px solid white; */
+    margin: auto;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    width: 95vw;
+    
+    
+}
+
+.images {
+    width: 9vw;
+}
+
+.guitar {
+    display: flex;
+    width: 40%;
+}
+
+.guitar .form-text {
+    padding-left: 10px;
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.wallet {
+    margin-left: 35px;
+    display: flex;
+    width: 40%;
+}
+
+.wallet .form-text {
+    padding-left: 15px;
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+
+.checkmark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+
+.checkmark .form-text {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+
+.checkmark img {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (min-width: 426px) {
+    .images {
+        width: 5vw;
+    }
+
+    .form {
+        font-family: 'Roboto Mono', monospace;
+        margin: 50px auto;
+        width: 60vw;
+    }
+
+    .checkmark {
+        margin-top: 20px;
+    }
+    
+
 }
