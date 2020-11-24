@@ -1,6 +1,28 @@
 .reviews {
-    border: 1px solid black;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 10px 10px;
+}
+
+.reviews-text {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    
+}
+
+@media (min-width: 426px) {
+    .reviews-text {
+        width: 40vw;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .reviews {
+        margin: 30px auto;
+    }
 }

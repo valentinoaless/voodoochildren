@@ -1,6 +1,12 @@
 .headline {
-    border: 1px solid black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.official-website {
+font-family: 'Roboto Mono', monospace;
+font-weight: 400;
 }

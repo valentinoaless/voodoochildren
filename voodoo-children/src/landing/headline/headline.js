@@ -5,15 +5,13 @@ import { updateCart } from '../../userData/userData.js';
 
 const Headline = () => {
 
-    const addItem = () => {
-        userData.cart.push('shirt');
-        updateCart(userData);
-    }
+
 
     return (
-        <div className="headline" style={{height: `${window.innerHeight - 50}px`}}>
-            <h1>Headline</h1>
-            <button onClick={addItem}>+</button>
+        <div className="headline">
+
+            <h3 className="official-website">Official Website</h3>
+
         </div>
     );
 };

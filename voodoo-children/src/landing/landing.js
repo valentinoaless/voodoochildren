@@ -12,10 +12,12 @@ const Landing = () => {
     return (
         <div>
             <NavBar />
-            <Headline />
-            <Benefits />
-            <Reviews />
-            <Form />
+            <div className="landing-content">
+                <Headline />
+                <Benefits />
+                <Reviews />
+                <Form />
+            </div>
             <Footer />
         </div>
     );
