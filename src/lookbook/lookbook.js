@@ -55,9 +55,10 @@ const Lookbook = () => {
             <img className="gallery-image" src={img6} alt="LB IMG 6" />
           </div>
         </div>
-
         <Footer />
+
       </div>
+
     </div>
   );
 };
