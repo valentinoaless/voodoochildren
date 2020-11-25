@@ -1,6 +1,18 @@
 .landing-content{
-    width: 100vw;
-    overflow: hidden;
+    width: 50vw;
+    margin: auto;
+    /* overflow: hidden; */
     background: #212121;
+
+}
+
+.landing-bg {
+    background: #212121;
+}
+
+@media (max-width: 425px) {
+    .landing-content {
+    width: 90vw;
+    }
 
 }
