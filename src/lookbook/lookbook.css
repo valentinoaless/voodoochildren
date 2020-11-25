@@ -14,13 +14,19 @@
   margin: 40px auto;
 }
 
-p {
+.paragraphP {
   font-family: "Roboto Mono", monospace;
+  font-size: 20px;
 }
 
 .get-groovy {
   display: flex;
   justify-content: center;
+  font-family: "Roboto Mono", monospace;
+  width: 30vw;
+  margin: auto;
+  font-weight: 400;
+  font-size: 3vh;
 }
 
 .ctainfo {
@@ -30,6 +36,8 @@ p {
   height: 100%;
   margin: 0;
   /* width: 50%; */
+  position: relative;
+  justify-content: center;
 }
 
 .experience-27 {
@@ -39,22 +47,50 @@ p {
   color: #ff53e1;
   font-size: 30px;
   justify-self: flex-start;
+  /* margin-bottom: 10px; */
 }
 
 button {
-  border: 2.5px solid black;
+  border: 4px solid black;
   color: blue;
   background-color: white;
   font-family: "Roboto Mono", monospace;
   font-weight: 5px;
-  width: 30%;
+  font-size: 20px;
+  width: 40%;
   height: 10%;
   white-space: nowrap;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
 }
 
 @media (max-width: 768px) {
   button {
     width: 50%;
+    font-size: 15px;
+    bottom: -20px;
+    font-weight: 500;
+  }
+  .paragraphP {
+    font-family: "Roboto Mono", monospace;
+    font-size: 13px;
+    overflow-wrap: break-word;
+  }
+
+  .lbImg {
+    width: 40vw;
+  }
+
+  .experience-27 {
+    margin-bottom: 10px;
+  }
+
+  .about {
+    height: 50vh;
+  }
+  .get-groovy {
+    white-space: nowrap;
   }
 }
 
@@ -85,7 +121,7 @@ button {
 .gallery-image {
   flex-shrink: 0;
   min-width: 110%;
-  min-height: 110%
+  min-height: 110%;
 }
 
 @media (max-width: 425px) {
@@ -108,7 +144,4 @@ button {
   .img4 {
     grid-column: 3 / 5;
   }
-
-
-
 }
