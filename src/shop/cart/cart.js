@@ -13,11 +13,13 @@ const Cart = (props) => {
 
     let [numItemsInCart, setNumItemsInCart] = useState(userCart.length)
     let [cart, setCart] = useState(userCart);
+    let [subtotal, setSubtotal] = useState(0)
     
     useEffect(() =>{
         getDBCart().then(res=>{
             setCart(res);
             setNumItemsInCart(res.length);
+            setSubtotal(getSubtotal());
         })
     },[])
 
@@ -76,9 +78,9 @@ const Cart = (props) => {
             </tbody>
         </table>
         <div>
-            <h2>Subtotal: US ${getSubtotal().toFixed(2)}</h2>
-            <h3>Tax: US ${(.07 * getSubtotal()).toFixed(2)}</h3>
-            <h2>Order Total: US ${(1.07 * getSubtotal()).toFixed(2)}</h2>
+            <h2>Subtotal: US ${subtotal.toFixed(2)}</h2>
+            <h3>Tax: US ${(.07 * subtotal).toFixed(2)}</h3>
+            <h2>Order Total: US ${(1.07 * subtotal).toFixed(2)}</h2>
             <div>Checkout</div>
         </div>
         <Footer />

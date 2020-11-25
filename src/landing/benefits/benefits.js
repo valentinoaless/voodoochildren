@@ -1,11 +1,12 @@
 import React from 'react';
 import './benefits.css'
 import { Link } from 'react-router-dom'
+import mask from './../../assets/LandingPics/mask.png'
 
 const Benefits = () => {
     return (
         <div className="benefits">
-            <img className="mask-image" src="./landingpics/mask.png" alt="mask photo" />
+            <img className="mask-image" src={mask} alt="mask photo" />
 
             <div className="collection">
                 <h3 className="hendrix-face-mask">Hendrix Face Mask Collection</h3>

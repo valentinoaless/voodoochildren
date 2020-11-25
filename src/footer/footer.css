@@ -1,26 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=*Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500*&display=swap");
+
 /* .footer {
   background-image: url("../../public/componentsLB/wavyblue.png");
 } */
 
 .footer-text {
   display: flex;
+  padding-top: 10px;
+  font-family: 'Roboto Mono', monospace;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-weight: 450;
 }
 
 .policyLinks {
+  font-family: 'Roboto Mono', monospace;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: .8rem;
   display: flex;
-  justify-content: center;
+  align-items: center;
   justify-content: space-evenly;
 }
 
+.policyLinks a {
+  color: black;
+}
+
+.email-input {
+  position: relative;
+  width: 50vw;
+  margin: auto;
+}
+
 .formEmail {
+  margin: auto;
+  font-family: 'Roboto Mono', monospace;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  border: 3px solid black;
+  width: 50vw;
+  height: 2.5vh;
+}
+
+.arrow-button {
+  background: white;
+  border: none;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+}
+
+.arrow {
+  height: 14px;
 }
 
 .footer-copyright {
+  font-family: 'Roboto Mono', monospace;
+  color: rgb(95, 93, 93);
   margin: 0;
   padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+
+@media (min-width: 426px) {
+
+  .policyLinks {
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+   
+  }
+
+  .email-input {
+    position: relative;
+    width: 30vw;
+    margin: auto;
+  }
+
+  .formEmail {
+    margin: auto;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    width: 30vw;
+    height: 2.5vh;
+  }
+
+
 }
