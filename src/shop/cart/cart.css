@@ -1,4 +1,46 @@
 .remove-item {
-    border: 1px solid black;
-    cursor: pointer;
+  /* border: 1px solid black; */
+  cursor: pointer;
+  color: red;
+  width: 20px;
+  font-size: 20px;
+}
+
+/* .cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.cartView {
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkButton {
+  border: 4px solid black;
+  color: blue;
+  background-color: white;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 5px;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.orderTotal {
+  font-family: "Roboto Mono", monospace;
+  margin-left: 100px;
+}
+
+.cartImgs {
+  width: 30%;
+}
+
+td {
+  padding: 20px;
+}
+.itemDetails {
+  margin-left: 20px;
 }
