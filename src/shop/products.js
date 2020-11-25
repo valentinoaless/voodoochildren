@@ -6,7 +6,7 @@ import Footer from '../footer/footer.js';
 import './products.css';
 import bg from "./../assets/background/promo-bg.png";
 import CartIcon from "./cart/carticon.js";
-import { userCart } from "./cart/usercart";
+import { userCart, coeff } from "./cart/usercart";
 
 
 const Products = (props) => {
@@ -26,6 +26,10 @@ const Products = (props) => {
         return products;
     }
 
+    const applyDiscount = () => {
+        coeff.discount = 0.9
+    }
+
     return (
         <div>
             <NavBar />
@@ -34,7 +38,7 @@ const Products = (props) => {
                 <LoadProducts first="0" last="5"/>
                 <div style={{position: "relative"}}>
                     <img src={bg} width="100%" alt=""/>
-                    <h3 id="promo">Get 10% Off</h3>
+                    <h3 id="promo" onClick={applyDiscount}>Get 10% Off</h3>
                 </div>
                 <LoadProducts first="6" last="8"/>
                 <Footer />

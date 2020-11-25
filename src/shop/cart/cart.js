@@ -4,7 +4,7 @@ import NavBar from './../../nav/nav.js';
 import Footer from './../../footer/footer.js';
 import CartIcon from './carticon.js'
 import { updateDBCart, getDBCart } from './../../userData/userData.js';
-import { userCart } from './usercart.js';
+import { userCart, coeff } from './usercart.js';
 import { productlist } from './../product-details/product/productlist.js';
 import { Link } from 'react-router-dom';
 
@@ -54,8 +54,7 @@ const getSubtotal = () => {
               <img
                 className="cartImgs"
                 src={
-                  productlist.find((product) => product.name === item.name)
-                    .image
+                  productlist.find((product) => product.name === item.name).image
                 }
                 alt={item.name}
               ></img>
@@ -111,9 +110,9 @@ const getSubtotal = () => {
         </table>
       </div>
     <div className="orderTotal">
-        <h2>Subtotal: US ${subtotal.toFixed(2)}</h2>
-        <h3>Tax: US ${(0.07 * subtotal).toFixed(2)}</h3>
-        <h2>Order Total: US ${(1.07 * subtotal).toFixed(2)}</h2>
+        <h2>Subtotal: US ${(subtotal * coeff.discount).toFixed(2)}</h2>
+        <h3>Tax: US ${(0.07 * subtotal * coeff.discount).toFixed(2)}</h3>
+        <h2>Order Total: US ${(1.07 * subtotal * coeff.discount).toFixed(2)}</h2>
         <button className="checkButton">Checkout</button>
     </div>
       <Footer />
