@@ -11,7 +11,7 @@ const Landing = () => {
 
     return (
         <div className="landing-bg">
-            <NavBar linkColor="white" />
+            <NavBar linkColor='white' />
             <div className="landing-content">
                 <Headline />
                 <Benefits />

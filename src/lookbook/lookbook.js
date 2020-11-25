@@ -25,32 +25,32 @@ const Lookbook = () => {
             <button>Shop Now</button>
           </div>
         </div>
-        <div className="lookbookImgs1strow">
-          <img
-            className="imgrowsizeing"
-            src="./componentsLB/LB-1.png"
-            alt="LB IMG 1"
-          />
-          <img
-            className="imgrowsizeing"
-            src="./componentsLB/LB-2.png"
-            alt="LB IMG 2"
-          />
-          <img
-            className="imgrowsizeing"
-            src="./componentsLB/LB-3.png"
-            alt="LB IMG 3"
-          />
-          <img
-            className="imgrowsizeing"
-            src="./componentsLB/LB-4.png"
-            alt="LB IMG 4"
-          />
+        
+        <div className="gallery">
+          <div className="img1 img-container">
+            <img className="gallery-image" src="./componentsLB/LB-1.png" alt="LB IMG 1"/>
+          </div>
+          <div className="img2 img-container">
+            <img className="gallery-image" src="./componentsLB/LB-2.png" alt="LB IMG 2"/>
+          </div>
+          <div className="img3 img-container">
+            <img className="gallery-image" src="./componentsLB/LB-3.png" alt="LB IMG 3"/>
+          </div>
+          <div className="img4 img-container">
+            <img className="gallery-image" src="./componentsLB/LB-4.png" alt="LB IMG 4"/>
+          </div>
+          <div className="img5 img-container">
+            <img className="gallery-image" src="./componentsLB/LB-5.png" alt="LB IMG 5" />
+          </div>
+          <div className="img6 img-container">
+            <img className="gallery-image" src="./componentsLB/LB-6.png" alt="LB IMG 6" />
+          </div>
+          
+         
+         
+          
         </div>
-        <div className="lookbookImg2ndrow">
-          <img src="./componentsLB/LB-5.png" alt="LB IMG 5" />
-          <img src="./componentsLB/LB-6.png" alt="LB IMG 6" />
-        </div>
+        
         <Footer />
       </div>
     </div>
