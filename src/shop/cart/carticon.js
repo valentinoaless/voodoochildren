@@ -7,16 +7,16 @@ import { getDBCart } from "./../../userData/userData.js"
 
 const CartIcon = (props) => {
 
-    // let [cartCount, setCartCount] = useState(userCart.length);
+    let [cartCount, setCartCount] = useState(userCart.length);
 
-    // getDBCart().then(res => {
-    //     setCartCount(res.length);
-    // })
+    getDBCart().then(res => {
+        setCartCount(res.length);
+    })
 
 
     return (
         <div id="cart-img">
-            <p>{props.number}</p>
+            <p>{cartCount}</p>
             <Link to='/cart'><img src={cart} alt="cart"/></Link>
         </div>
     );

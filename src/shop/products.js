@@ -6,6 +6,7 @@ import Footer from '../footer/footer.js';
 import './products.css';
 import bg from "./../assets/background/promo-bg.png";
 import CartIcon from "./cart/carticon.js";
+import { userCart } from "./cart/usercart";
 
 
 const Products = (props) => {
