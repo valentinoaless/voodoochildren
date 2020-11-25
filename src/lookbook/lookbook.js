@@ -27,7 +27,7 @@ const Lookbook = () => {
             <br></br>
             <p className="paragraphP">Limited quantity, get yours today!</p>
             <Link to="/products">
-              <button>Shop Now</button>
+              <button className="lbButton">Shop Now</button>
             </Link>
           </div>
         </div>
