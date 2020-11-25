@@ -6,6 +6,7 @@ import CartIcon from './carticon.js'
 import { updateDBCart, getDBCart } from './../../userData/userData.js';
 import { userCart } from './usercart.js';
 import { productlist } from './../product-details/product/productlist.js';
+import { Link } from 'react-router-dom';
 
 
 
@@ -23,19 +24,23 @@ const Cart = (props) => {
         })
     },[])
 
-
     const removeItem =  async (i) => {
-        let copyCart = [...cart]
-        copyCart.splice(i, 1);
-        await updateDBCart(copyCart)
-        setCart(copyCart);
-        setNumItemsInCart(copyCart.length);
+        //let copyCart = [...cart]
+        cart.splice(i, 1);
+        userCart.splice(i, 1);
+        await updateDBCart(cart)
+        return true;
     }
 
     const getSubtotal = () => {
-        let subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0)
-        console.log(cart.reduce((acc, item) => acc + (item.price * item.quantity)), 0);
-        return subtotal;
+
+        if(cart.length != 0) {
+            let subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+            console.log(cart.reduce((acc, item) => acc + (item.price * item.quantity)), 0);
+            return subtotal;
+        } else {
+            return 0;
+        }
     }
 
     const CartItems = () => {
@@ -54,7 +59,17 @@ const Cart = (props) => {
                 <td>{item.quantity}</td>
                 <td>${item.price}</td>
                 <td>${item.price * item.quantity}</td>
-                <td><div className="remove-item" onClick={() => removeItem(i)}>X</div></td>
+                <td><div className="remove-item" onClick={() => removeItem(i).then(res => {
+                    if(res){
+                        getDBCart().then(resp => {
+                            console.log(resp);
+                            setCart(resp);
+                            setNumItemsInCart(resp.length);
+                            setSubtotal(getSubtotal());
+                            console.log(getSubtotal());
+                        })
+                    }
+                })}>X</div></td>
             </tr>)
         })
     }
