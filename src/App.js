@@ -6,15 +6,16 @@ import Shop from './shop/shop.js';
 import Products from './shop/products.js'
 import { Switch, Route } from 'react-router-dom';
 import userdata from './userData/userData.json';
+import ProductPage from './shop/productpage.js';
 
 function App() {
   return (
     <div>
     <Switch>
       <Route exact path='/' render={(props) => <Landing {...props}/>} />
-      <Route exact path='/shop' render={(props) => <Shop {...props}/>} />
-      <Route exact path='/about' render={(props) => <Lookbook {...props}/>} />
+      <Route exact path='/lookbook' render={(props) => <Lookbook {...props}/>} />
       <Route exact path='/products' render={(props) => <Products {...props} /> } />
+      <Route exact path='/products/:productName' render={(props) => <ProductPage {...props} /> } />
     </Switch>
     </div>
   );

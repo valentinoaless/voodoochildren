@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from '../nav/nav.js'
-import Product from './products/product/product.js'
-import productlist from './products/productlist.json';
+import Product from './product-details/product/product.js'
+import productlist from './product-details/productlist.json';
 import Footer from '../footer/footer.js'
 import './products.css'
 
