@@ -1,6 +1,8 @@
 .landing-content{
     width: 100vw;
     overflow: hidden;
-    background: #212121;
+}
 
+.landing-bg {
+    background-color: #212121;
 }

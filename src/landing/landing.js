@@ -10,8 +10,8 @@ import Footer from '../footer/footer.js'
 const Landing = () => {
 
     return (
-        <div>
-            <NavBar />
+        <div className="landing-bg">
+            <NavBar linkColor='white' />
             <div className="landing-content">
                 <Headline />
                 <Benefits />
