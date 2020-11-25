@@ -15,9 +15,7 @@ const Cart = (props) => {
     let [cart, setCart] = useState(userCart);
     
     useEffect(() =>{
-        console.log('useeffect')
         getDBCart().then(res=>{
-            console.log(res)
             setCart(res);
             setNumItemsInCart(res.length);
         })
@@ -26,25 +24,23 @@ const Cart = (props) => {
 
     const removeItem =  async (i) => {
         let copyCart = [...cart]
-        //let num = userCart.indexOf(item)
-       // console.log(num);
         copyCart.splice(i, 1);
-        //let cartNumItems = copyCart.length
         await updateDBCart(copyCart)
-        //let cart = await getDBCart()
-        //.log(cart)
         setCart(copyCart);
         setNumItemsInCart(copyCart.length);
-        
+    }
+
+    const getSubtotal = () => {
+        let subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0)
+        console.log(cart.reduce((acc, item) => acc + (item.price * item.quantity)), 0);
+        return subtotal;
     }
 
     const CartItems = () => {
         return cart.map((item,i) => {
-            console.log(item);
             return  (
             <tr className="cart-row">
                 <td>
-                    {numItemsInCart}
                     <div style={{display: 'flex'}}>
                         <img src={productlist.find(product => product.name === item.name).image} alt={item.name}></img>
                         <div>
@@ -79,7 +75,12 @@ const Cart = (props) => {
                 <CartItems />
             </tbody>
         </table>
-
+        <div>
+            <h2>Subtotal: US ${getSubtotal().toFixed(2)}</h2>
+            <h3>Tax: US ${(.07 * getSubtotal()).toFixed(2)}</h3>
+            <h2>Order Total: US ${(1.07 * getSubtotal()).toFixed(2)}</h2>
+            <div>Checkout</div>
+        </div>
         <Footer />
         </div>
     );

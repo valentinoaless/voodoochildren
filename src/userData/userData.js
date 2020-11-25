@@ -15,7 +15,6 @@ function makeid(length) {
     return result;
 }
   
-
 let _id;
 
 if(!localStorage.getItem('userID')) {
