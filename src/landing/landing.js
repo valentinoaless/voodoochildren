@@ -17,8 +17,9 @@ const Landing = () => {
                 <Benefits />
                 <Reviews />
                 <Form />
+                <Footer />
             </div>
-            <Footer />
+
         </div>
     );
 };

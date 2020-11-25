@@ -26,7 +26,7 @@
     position: relative;
 }
 
-button {
+.landing-button {
     border: 2.5px solid black;
     color: blue;
     background-color: white;
@@ -78,14 +78,14 @@ button {
         width: 60%;
     }
 
-    button {
+    .landing-button {
         border: 2.5px solid black;
         color: blue;
         background-color: white;
         font-family: "Roboto Mono", monospace;
         font-weight: 5px;
-        width: 20%;
-        height: 30%;
+        width: 18%;
+        height: 25%;
         white-space: nowrap;
         position: absolute;
         bottom: -10px;

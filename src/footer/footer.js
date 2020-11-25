@@ -25,7 +25,7 @@ const Footer = () => {
  license by The Thread Shop and Musictoday II,
         LLC.
       </p>
-    </div>
-  );
+        </div>
+    );
 };
 export default Footer;
