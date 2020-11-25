@@ -27,8 +27,10 @@ const ProductPage = (props) => {
             size: e.target.parentNode.elements['size'].value,
             quantity: Number(e.target.parentNode.elements['qty'].value)
         })
-        updateDBCart(userCart);
-        history.push('/products')
+        updateDBCart(userCart).then(() =>{
+            history.push('/cart')
+        })
+       
     }
 
     return (

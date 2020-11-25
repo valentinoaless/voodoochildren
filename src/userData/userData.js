@@ -15,10 +15,6 @@ function makeid(length) {
     return result;
 }
   
-  // first we check if the user has already used the page
-  // check local storage to see if they have
-  // if they haven't we have to create a new user in the api and then update whenever the shopping cart changes
-  // if they have then we get the user information from the database like objects in shopping cart
 
 let _id;
 
@@ -43,15 +39,21 @@ export const getDBCart = async () => {
   return cart;
 }
 
-getDBCart().then(res => {
-  console.log(res);
-}).catch(err => console.log(err));
 
-export const updateDBCart = (cart) => {
-  axios.put(`https://ironrest.herokuapp.com/voodoochildren/${_id}`, {user: userdata.user, "cart": cart}).then(res => {
-    console.log(res);
+export const updateDBCart = async (cart) => {
+  
+  return await axios.put(`https://ironrest.herokuapp.com/voodoochildren/${_id}`, {user: userdata.user, "cart": cart}).then(res => {
+      console.log(res);
   })
+    
 }
+
+  
+  
+  getDBCart().then(res => {
+    console.log(res);
+  }).catch(err => console.log(err));
+
 
 
 
