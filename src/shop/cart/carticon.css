@@ -1,0 +1,25 @@
+#cart-img {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 50px;
+    top: 1vh;
+}
+
+#cart-img img {
+    width: 35px;
+    transition: 200ms;
+}
+
+#cart-img img:hover {
+    width: 50px;
+}
+
+#cart-img p {
+    font-size: 1.3rem;
+    color: #ff53e1;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    margin: 0;
+}

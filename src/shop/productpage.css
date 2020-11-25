@@ -1,0 +1,13 @@
+.product-page {
+    width: 50vw;
+    margin: auto;
+}
+
+.product-details {
+    display: flex;
+}
+
+#add-cart {
+    border: 1px solid black;
+    cursor: pointer;
+}

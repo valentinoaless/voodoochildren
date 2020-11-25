@@ -3,6 +3,13 @@ import NavBar from "../nav/nav.js";
 import "./lookbook.css";
 import Footer from "../footer/footer.js";
 import { Link } from "react-router-dom";
+import hendrix from "./../assets/componentsLB/Hendrix-photo.png";
+import img1 from "./../assets/componentsLB/LB-1.png";
+import img2 from "./../assets/componentsLB/LB-2.png";
+import img3 from "./../assets/componentsLB/LB-3.png";
+import img4 from "./../assets/componentsLB/LB-4.png";
+import img5 from "./../assets/componentsLB/LB-5.png";
+import img6 from "./../assets/componentsLB/LB-6.png";
 
 const Lookbook = () => {
   return (
@@ -13,8 +20,8 @@ const Lookbook = () => {
         <div className="about">
           <img
             className="lbImg"
-            src="./componentsLB/Hendrix-photo.png"
-            alt="Hendrix Picture"
+            src={hendrix}
+            alt="Hendrix"
           />
           <div className="ctainfo">
             <h5 className="experience-27">
@@ -36,42 +43,42 @@ const Lookbook = () => {
           <div className="img1 img-container">
             <img
               className="gallery-image"
-              src="./componentsLB/LB-1.png"
+              src={img1}
               alt="LB IMG 1"
             />
           </div>
           <div className="img2 img-container">
             <img
               className="gallery-image"
-              src="./componentsLB/LB-2.png"
+              src={img2}
               alt="LB IMG 2"
             />
           </div>
           <div className="img3 img-container">
             <img
               className="gallery-image"
-              src="./componentsLB/LB-3.png"
+              src={img3}
               alt="LB IMG 3"
             />
           </div>
           <div className="img4 img-container">
             <img
               className="gallery-image"
-              src="./componentsLB/LB-4.png"
+              src={img4}
               alt="LB IMG 4"
             />
           </div>
           <div className="img5 img-container">
             <img
               className="gallery-image"
-              src="./componentsLB/LB-5.png"
+              src={img5}
               alt="LB IMG 5"
             />
           </div>
           <div className="img6 img-container">
             <img
               className="gallery-image"
-              src="./componentsLB/LB-6.png"
+              src={img6}
               alt="LB IMG 6"
             />
           </div>

@@ -1,13 +1,16 @@
 import React from 'react';
 import './product.css';
 import { Link } from 'react-router-dom'
+import img from './../../../assets/products/product1.png';
 
 const Product = (props) => {
+
+
     return (
         <div className="product">
             <div className="product-image">
                 <Link to={`/products/${props.name}`}>
-                    <img src={props.image} alt={props.name} width="187px" height="200px"></img>
+                    <img src={`${props.image}`} alt={props.name} width="187px" height="200px"></img>
                 </Link>
             </div>
             <div>
