@@ -18,11 +18,7 @@ const Lookbook = () => {
       <div className="lookbook">
         <h3 className="get-groovy">Get Groovy</h3>
         <div className="about">
-          <img
-            className="lbImg"
-            src={hendrix}
-            alt="Hendrix"
-          />
+          <img className="lbImg" src={hendrix} alt="Hendrix" />
           <div className="ctainfo">
             <h5 className="experience-27">
               Experience 27<br></br> Lookbook
@@ -41,46 +37,22 @@ const Lookbook = () => {
 
         <div className="gallery">
           <div className="img1 img-container">
-            <img
-              className="gallery-image"
-              src={img1}
-              alt="LB IMG 1"
-            />
+            <img className="gallery-image" src={img1} alt="LB IMG 1" />
           </div>
           <div className="img2 img-container">
-            <img
-              className="gallery-image"
-              src={img2}
-              alt="LB IMG 2"
-            />
+            <img className="gallery-image" src={img2} alt="LB IMG 2" />
           </div>
           <div className="img3 img-container">
-            <img
-              className="gallery-image"
-              src={img3}
-              alt="LB IMG 3"
-            />
+            <img className="gallery-image" src={img3} alt="LB IMG 3" />
           </div>
           <div className="img4 img-container">
-            <img
-              className="gallery-image"
-              src={img4}
-              alt="LB IMG 4"
-            />
+            <img className="gallery-image" src={img4} alt="LB IMG 4" />
           </div>
           <div className="img5 img-container">
-            <img
-              className="gallery-image"
-              src={img5}
-              alt="LB IMG 5"
-            />
+            <img className="gallery-image" src={img5} alt="LB IMG 5" />
           </div>
           <div className="img6 img-container">
-            <img
-              className="gallery-image"
-              src={img6}
-              alt="LB IMG 6"
-            />
+            <img className="gallery-image" src={img6} alt="LB IMG 6" />
           </div>
         </div>
 
